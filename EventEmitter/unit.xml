@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.8480" tests="8" failures="2">
+  <testsuite name="Root Suite" timestamp="2022-06-28T03:33:25" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="async_queue" timestamp="2022-06-28T03:33:25" tests="8" file="/Users/Sudeep/NodeJS/Challenges/398ac207-9768-4ecf-958e-e2cf37f28325/test/index.spec.js" time="1.8480" failures="2">
+    <testcase name="async_queue Should have all the methods in the class" time="0.0020" classname="Should have all the methods in the class">
+    </testcase>
+    <testcase name="async_queue Should enqueue the items to the queue" time="0.0580" classname="Should enqueue the items to the queue">
+    </testcase>
+    <testcase name="async_queue Should return the item at head when peek method is called" time="0.0000" classname="Should return the item at head when peek method is called">
+    </testcase>
+    <testcase name="async_queue Should start the dequeue process once start method is called" time="0.5230" classname="Should start the dequeue process once start method is called">
+    </testcase>
+    <testcase name="async_queue Should dequeue items every 250ms from the queue" time="0.5130" classname="Should dequeue items every 250ms from the queue">
+    </testcase>
+    <testcase name="async_queue Should update the queue interval" time="0.1020" classname="Should update the queue interval">
+    </testcase>
+    <testcase name="async_queue Should pause the dequeue process" time="0.3230" classname="Should pause the dequeue process">
+      <failure message="expected 0 to deeply equal 1" type="AssertionError"><![CDATA[AssertionError: expected 0 to deeply equal 1
+    at Timeout._onTimeout (test/index.spec.js:132:37)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)]]></failure>
+    </testcase>
+    <testcase name="async_queue Should continue to listen for new data even on pausing the dequeue process" time="0.3270" classname="Should continue to listen for new data even on pausing the dequeue process">
+      <failure message="expected 0 to deeply equal 1" type="AssertionError"><![CDATA[AssertionError: expected 0 to deeply equal 1
+    at Timeout._onTimeout (test/index.spec.js:162:37)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
