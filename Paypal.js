@@ -20,11 +20,19 @@ const counter = (inputArr) => {
   return counter;
 };
 
+const reduceCounter = (inputArr3) => {
+  return true;
+};
+
 console.log("String Counter", counter(inputArr3));
 
 /* Problem 2 */
 
-let input = ["110011".split("").map((digit) => +digit), "001100".split("").map((digit) => +digit), "110011".split("").map((digit) => +digit)];
+let input = [
+  "110011".split("").map((digit) => +digit),
+  "001100".split("").map((digit) => +digit),
+  "110011".split("").map((digit) => +digit),
+];
 
 let matrixCounter = 0;
 let visited = [];
