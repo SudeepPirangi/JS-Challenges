@@ -2,15 +2,21 @@ class Queue {
   constructor(initial = []) {
     this.queue = initial;
   }
-  isEmpty = () => this.queue.length === 0;
-  push = (value) => {
+  isEmpty() {
+    return this.queue.length === 0;
+  }
+  push(value) {
     this.queue = [...this.queue, value];
-  };
-  pop = () => this.queue.shift();
-  get = (index) => (this.queue[index] ? this.queue[index] : null);
-  print = () => {
+  }
+  pop() {
+    return this.queue.shift();
+  }
+  get(index) {
+    return this.queue[index] ? this.queue[index] : null;
+  }
+  print() {
     console.log(this.queue.join(" "));
-  };
+  }
 }
 
 const queue = new Queue();

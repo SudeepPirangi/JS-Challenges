@@ -2,25 +2,25 @@ class Stack {
   constructor(initial = []) {
     this.stack = initial;
   }
-  isEmpty = () => {
+  isEmpty() {
     return this.stack.length === 0;
-  };
-  push = (value) => {
+  }
+  push(value) {
     console.log(`Pushing ${value} to the stack`);
     this.stack = [...this.stack, value];
-  };
-  pop = () => {
+  }
+  pop() {
     if (this.isEmpty()) return null;
     return this.stack.splice(this.stack.length - 1, 1);
-  };
-  print = () => {
+  }
+  print() {
     for (let each of this.stack) {
       console.log(each);
     }
-  };
-  get = (index) => {
+  }
+  get(index) {
     return this.stack[index] ? this.stack[index] : null;
-  };
+  }
 }
 
 const stack = new Stack();
