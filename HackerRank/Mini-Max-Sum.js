@@ -19,19 +19,11 @@ const reducer = (arr, exp_index) =>
 
 function miniMaxSum(arr) {
   // Write your code here
-  let min = 0;
-  let max = 0;
-  arr.forEach((num, index) => {
-    const sum = reducer(arr, index);
-    if (index === 0) {
-      min = sum;
-      max = sum;
-    } else {
-      if (sum > max) max = sum;
-      if (sum < min) min = sum;
-    }
-  });
-  console.log(min, max);
+  arr = arr.sort((a, b) => a - b);
+  let commonSum = arr
+    .slice(1, arr.length - 1)
+    .reduce((sum, val) => sum + val, 0);
+  console.log(arr[0] + commonSum, arr[arr.length - 1] + commonSum);
 }
 
 miniMaxSum([1, 2, 3, 4, 5]);

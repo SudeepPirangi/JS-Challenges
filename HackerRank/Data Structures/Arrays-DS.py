@@ -11,3 +11,10 @@ def reverseArray(a):
 array = [1, 3, 4, 9]
 reverse = reverseArray(array)
 print(" ".join(map(str, reverse)))
+
+def staircase(n):
+    for i in range(n, 0, -1):
+        # print(" "*(n - i), end="")
+        print("*"*i)
+
+staircase(4)
