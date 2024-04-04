@@ -9,4 +9,6 @@ var mergeAlternately = function (word1, word2) {
   return str + max.slice(min.length, max.length);
 };
 
+console.log(mergeAlternately("abc", "pqr"));
 console.log(mergeAlternately("ab", "pqrs"));
+console.log(mergeAlternately("abcd", "pq"));

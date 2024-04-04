@@ -3,7 +3,7 @@ function removeDuplicates(llist) {
   let curr = llist;
   while (curr) {
     if (curr.data == curr.next?.data) {
-      curr.next = curr?.next?.next;
+      curr.next = curr.next?.next;
     } else {
       curr = curr.next;
     }
