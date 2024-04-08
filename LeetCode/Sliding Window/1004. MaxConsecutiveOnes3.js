@@ -2,10 +2,7 @@ var longestOnes = function (nums, k) {
   let [start, end] = [0, 0];
   while (end < nums.length) {
     if (!nums[end]) k--;
-    if (k < 0) {
-      if (!nums[start]) k++;
-      start++;
-    }
+    if (k < 0 && nums[start++] === 0) k++;
     end++;
   }
   return end - start;
